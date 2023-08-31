@@ -2,10 +2,21 @@
 session_start();
 
 $username = "";
-$email    = "";
-$errors = array(); 
+$email = "";
+$errors = array();
 
-$db = mysqli_connect('localhost', 'root', '', 'project');
+$azure_mysql_dbname = "student-companion-database";
+$azure_mysql_host = "student-companion-server.mysql.database.azure.com";
+$azure_mysql_username = "aumxlleamq";
+$azure_mysql_password = "IJ26X31VJ74QXS0U$";
+$azure_mysql_port = 3306;
+
+$db = mysqli_init();
+mysqli_real_connect($db, $azure_mysql_host, $azure_mysql_username, $azure_mysql_password, $azure_mysql_dbname, $azure_mysql_port, NULL, MYSQLI_CLIENT_SSL);
+
+if (!$db) {
+    die("Connection failed: " . mysqli_connect_error());
+}
 
 if (isset($_POST['reg_user'])) {
   $username = mysqli_real_escape_string($db, $_POST['username']);
