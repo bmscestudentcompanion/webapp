@@ -97,7 +97,7 @@ body {
 <body style="font-family: Arial, Helvetica, sans-serif ; text-align: center; background-image: url('sgpawall.jpeg'); color:white;">
 
     <div>
-        <A HREF="dashboard.php"><img src="image/bmsce.png" height="200"></A>
+        <A HREF="dashboard.php"><img src="bmsce.png" height="200"></A>
         <H1 style="text-align: center; font-size: 25px;">SELECT YOUR BRANCH</H1>
     </div>
     <BR>
