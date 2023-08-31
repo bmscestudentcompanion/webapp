@@ -17,7 +17,20 @@ mysqli_real_connect($db, $azure_mysql_host, $azure_mysql_username, $azure_mysql_
 if (!$db) {
     die("Connection failed: " . mysqli_connect_error());
 }
+$create_table_query = "
+    CREATE TABLE IF NOT EXISTS users (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        username VARCHAR(255) NOT NULL,
+        email VARCHAR(255) NOT NULL,
+        password VARCHAR(255) NOT NULL
+    )
+";
 
+if (mysqli_query($db, $create_table_query)) {
+    echo "Table 'users' created successfully";
+} else {
+    echo "Error creating table: " . mysqli_error($db);
+}
 if (isset($_POST['reg_user'])) {
   $username = mysqli_real_escape_string($db, $_POST['username']);
   $email = mysqli_real_escape_string($db, $_POST['email']);
