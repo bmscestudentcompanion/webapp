@@ -25,12 +25,6 @@ $create_table_query = "
         password VARCHAR(255) NOT NULL
     )
 ";
-
-if (mysqli_query($db, $create_table_query)) {
-    echo "Table 'users' created successfully";
-} else {
-    echo "Error creating table: " . mysqli_error($db);
-}
 if (isset($_POST['reg_user'])) {
   $username = mysqli_real_escape_string($db, $_POST['username']);
   $email = mysqli_real_escape_string($db, $_POST['email']);
