@@ -6,10 +6,10 @@ $azure_mysql_password = "IJ26X31VJ74QXS0U$";
 $azure_mysql_port = 3306;
 
 $db = mysqli_init();
-mysqli_real_dbect($db, $azure_mysql_host, $azure_mysql_username, $azure_mysql_password, $azure_mysql_dbname, $azure_mysql_port, NULL, MYSQLI_CLIENT_SSL);
+mysqli_real_connect($db, $azure_mysql_host, $azure_mysql_username, $azure_mysql_password, $azure_mysql_dbname, $azure_mysql_port, NULL, MYSQLI_CLIENT_SSL);
 
 if (!$db) {
-    die("dbection failed: " . mysqli_dbect_error());
+    die("connection failed: " . mysqli_dbect_error());
 }
 $create_table_query = "
     CREATE TABLE IF NOT EXISTS profile (
