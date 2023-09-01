@@ -1,8 +1,29 @@
 <?php
-$conn = new mysqli("localhost", "root","", "project");
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+$azure_mysql_dbname = "student-companion-database";
+$azure_mysql_host = "student-companion-server.mysql.database.azure.com";
+$azure_mysql_username = "aumxlleamq";
+$azure_mysql_password = "IJ26X31VJ74QXS0U$";
+$azure_mysql_port = 3306;
+
+$db = mysqli_init();
+mysqli_real_connect($db, $azure_mysql_host, $azure_mysql_username, $azure_mysql_password, $azure_mysql_dbname, $azure_mysql_port, NULL, MYSQLI_CLIENT_SSL);
+
+if (!$db) {
+    die("Connection failed: " . mysqli_connect_error());
 }
+$create_table_query = "
+    CREATE TABLE IF NOT EXISTS profile (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        firstName VARCHAR(255) NOT NULL,
+        lastName VARCHAR(255) NOT NULL,
+        gender VARCHAR(255) NOT NULL,
+        nationality VARCHAR(255) NOT NULL,
+        address VARCHAR(255) NOT NULL,
+        father VARCHAR(255) NOT NULL,
+        mother VARCHAR(255) NOT NULL,
+        mobileNumber INT(10) NOT NULL,
+    )
+";
 $firstName = $_POST['firstName'];
 $lastName = $_POST['lastName'];
 $gender = $_POST['gender'];
