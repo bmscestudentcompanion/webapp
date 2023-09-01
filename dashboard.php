@@ -177,7 +177,7 @@ li:hover a:before{
   <li><a href="https:\\www.bmsce.ac.in" target="_blank"><img src="bmsce.png" alt="bmsce" height="50"></a></li>
   <li><a href="branch.php" target="_blank">Resources</a></li>
   <li><a href="https://bmsce.ac.in/home/AllNews" target="_blank">News</a></li>
-  <li><a href="forums.php" target="_blank">Club Infos</a></li>
+  <li><a href="forums.php" target="_blank">Club Info</a></li>
   <li><a href="profile_page.php">Profile</a></li>
   <li><a href="sgpa_calculator.php">SGPA Calculator</a></li>
   <li style="float:right"><a class="active" href="index.php?logout='1'">Sign Out</a></li>
