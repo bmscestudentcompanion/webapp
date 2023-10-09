@@ -103,21 +103,21 @@ body {
     <BR>
     <div style="align-content:center;">
       <ul style="font-family: 'Times New Roman', Times, serif; text-align: left">
-        <a href="cse_sems.php"><button class="glow-on-hover">First Semester</button></a>
+        <a href="CSE/csesem1.php"><button class="glow-on-hover">First Semester</button></a>
         <BR></br>
-        <a href="ece_sems.php"><button class="glow-on-hover">Second Semester</button></a>
+        <a href="CSE/csesem2.php"><button class="glow-on-hover">Second Semester</button></a>
         <BR></br>
-        <a href="mech_sems.php"><button class="glow-on-hover">Third Semester</button></a>
+        <a href="CSE/csesem3.php"><button class="glow-on-hover">Third Semester</button></a>
         <BR></br>
-        <a href="civil_sems.php"><button class="glow-on-hover">Fourth Semester</button></a>
+        <a href="CSE/csesem4.php"><button class="glow-on-hover">Fourth Semester</button></a>
         <BR></br>
-        <a href="chem_sems.php"><button class="glow-on-hover">Fifth Semester</button></a>
+        <a href="CSE/csesem5.php"><button class="glow-on-hover">Fifth Semester</button></a>
         <BR></br>
-        <a href="ise_sems.php"><button class="glow-on-hover">Sixth Semester</button></a>
+        <a href="CSE/csesem6.php"><button class="glow-on-hover">Sixth Semester</button></a>
         <BR></br>
-        <a href="mech_sems.php"><button class="glow-on-hover">Seventh Semester</button></a>
+        <a href="CSE/csesem7.php"><button class="glow-on-hover">Seventh Semester</button></a>
         <BR></br>
-        <a href="mech_sems.php"><button class="glow-on-hover">Eighth Semester</button></a>
+        <a href="CSE/csesem8.php"><button class="glow-on-hover">Eighth Semester</button></a>
         <BR></br>
       </ul>
     </div>
