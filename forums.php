@@ -1,5 +1,5 @@
 <?php
-include('server.php');
+include('server.php, save_data.php');
 
 session_start();
 
