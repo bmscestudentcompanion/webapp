@@ -114,6 +114,8 @@ body {
         <a href="chem_sems.php"><button class="glow-on-hover">CHEMICAL ENGINEERING</button></a>
         <BR></br>
         <a href="ise_sems.php"><button class="glow-on-hover">INFORMATION SCIENCE</button></a>
+        <BR></br>
+        <a href="medelc_sems.php"><button class="glow-on-hover">MEDICAL ELECTRONICS</button></a>
       </ul>
     </div>
 </body>
